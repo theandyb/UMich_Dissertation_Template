@@ -1,49 +1,14 @@
 \chapter{Introduction}
 \label{chpt:introduction}
 
-This is a dissertation template. Here is the introduction text. As with this chapter, add other chapters to the dissertation and cite them in the ``main.tex'' file.
+The development of Next Generation Sequencing (NGS) has revolutionized the study of genetic variation, allowing for the analysis of many genomes in a fast and cost-efficient manner \citep{Bagger2024}. These developments have enabled the study of the genetic components of a vast number of heritable traits \citep{Sollis2022, Szustakowski2021}, and such results are being used to both identify and characterize biological mechanisms underlying diseases and traits \citep{Gallagher2018}, and to develop polygenic risk scores to better predict an individual's risk of developing certain diseases and better personalize medical care \citep{Lewis2020}. In addition, the generation of large numbers of genome sequences has also allowed for the study of genome diversity and evolution through the analysis of genome-wide patterns of selection, recombination and linkage disequilibrium, and mutation processes \citep{Marchi2021}.
 
+Mutation rates are a key feature of many demographic inference tools, and as the source of all heritable genetic variation, the rates at which they occur along the genome along with the evolution of the underlying processes are themselves the focus of much investigation \citep{Carlson2018, Chintalapati2020, Gao2019, Harris2017, Moore2021, Narasimhan2017, Seplyarskiy2023, Seplyarskiy2021b, Seplyarskiy2021a, Sgurel2014}. In evaluations of mutation rate models, various genomic features have been identified as being associated with either increased or decreased rates of mutations; such features include early/late replication timing, recombination rates, methylation markers, and the nucleotide sequence context of the putative mutation site \citep{Carlson2018, Seplyarskiy2023}. In particular, \citep{Carlson2018} found that the influence of genomic features such as DNAse hypersensitive sites and GC content were associated with both increased and decreased rates of mutation, depending on both the type of mutation under consideration, and the sequence context surrounding the putative mutation site. When incorporating local sequence context in models of mutation rates, choices must be made in regards to how many neighboring positions are to be included, and to what extent interactions among neighboring nucleotides also are to be accounted for. A straighforward-way to incorporate local sequence context into mutation rate models is to consider mutation subtypes not only by the reference and alternative allele at a focal position, but also by the nucleotides at surrounding positions. By fitting separate models for each motif-mutation category, the influence of local sequence context is controlled for not only the individual effects of each included flanking position, but all orders of interaction among the nucleotides at those positions. Taking such an approach, \citep{Carlson2018} found that models which included flanking nucleotides in a $\pm 3$ window surrounding the focal position outperformed models that incorporated fewer flanking positions. However, the addition of additional flanking positions in the motif-category approach causes an exponential increase in the number of categories, and thus limits the size of local sequence context windows used in practice. \citep{Seplyarskiy2023} employed a more flexible approach by augmenting a $\pm 2$ base-pair motif-category model with independent effects for neighboring bases further up/down-stream from the focal position. This assumes that the influence of interactions among neighboring positions on rates of mutation at a focal position are contained within the $\pm 2$ base-pair window, and that the additional influence of additional neighboring positions is captured through independent parameters with no additional interactions. While it seems reasonable to assume that neighboring positions closer a focal position would exert more influence on the probability of a mutation, these assumptions have yet to have been fully explored, and it is an open question as to how far from a focal position would we expect neighboring nucleotides to have an influence on mutation rates, and to what extent and degree do interactions among neighboring sequences have influence on mutation rates.
+ 
+In the generation of NGS data, what we observe are the genotypes at positions along the genome. However, in many applications we would like to know not only which combinations of variants an individual carries along their genomes, but also which variants traveled with each other on the same chromosomes. This requires the reconstruction of phased chromosomes, which can be performed in a number of ways. For short-read NGS data, we generally rely on two approaches: applying the laws of Mendelian inheritance to construct haplotypes when related pedigrees of individuals are sequenced, or statistical phasing methods when we do not have samples from related pedigrees. Modern statistical phasing algorithms \citep{Browning2021, Hofmeister2023, Loh2016} are able to generate highly accurate phasing results for large samples in a computationally efficient manner, but their accuracy depends largely on sample size and reference composition, and errors are generated. 
 
-\section{Example Section}
-\label{sec:examplesec1}
+In the second chapter of this disseration,
 
-This dissertation template combines the work of our fore-academics to build a format that works for all of those who use \LaTeX \cite{jefferson2019policing}. We sincerely hope you find it useful \cite{shannon1948mathematical}.
+In the third chapter of this dissertation,
 
-You can add acronyms in the text and front table! See the comments around the acronyms command for how to include them in the front table. The first time you use an acronym in the text, use the ``\textbackslash ac\{\}'' command like with this \ac{TLA} or \ac{SOA}. After you use them the first time, it'll just appear as the acronym (like this: \ac{TLA}).
-
-\blindtext
-
-
-\section{Example Tables}
-\label{sec:examplesec2}
-
-You can make a table as follows \cite{ong1997gilbert}. Use can cross-reference items by doing things like Chapter \ref{chpt:introduction}.
-
-\blindtext
-
-\begin{table}[ht]
-    \begin{tabular}{l|l}
-        \textbf{left column} & \textbf{right column} \\ \hline
-        entry1 & entry2 \\
-        entry3 & entry4
-    \end{tabular}
-    \caption{An example table with things in it. See \url{https://www.latex-tables.com/} for a relatively-easy latex table generator. Other options include \url{https://truben.no/table/old/} and \url{https://www.tablesgenerator.com/}, but you'll find others online, too! Here, we're also showing that you can create URLs that link to external websites while still being underlined. You can use ``\textbackslash url\{\}'' for shorter URLs, but they will roll over the end of the line if they're too long. In that case, it's more accessible if you use ``\textbackslash href\{\textless url\textgreater\}\{\textless text\textgreater\}'' instead because it breaks at spaces in the text.}
-    \label{tab:my-table}
-\end{table}
-
-\blindtext
-
-
-\section{Example Figure}
-\label{sec:examplesec3}
-
-Check out Figure \ref{fig:the_big_house}. \blindtext
-
-\begin{figure}
-    \centering
-    \includegraphics{chapters/figures/the_big_house.jpeg}
-    \caption{The Big House, taken from Michigan Radio's article about it \cite{the_big_house}}
-    \label{fig:the_big_house}
-\end{figure}
-
-\blindtext[3]
+In the fourth chapter of this dissertation,

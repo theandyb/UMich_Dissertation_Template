@@ -38,25 +38,25 @@
 \makeatother
 
 % Title of the thesis
-\title{Your Dissertation Title}
+\title{Investigations into Mutation Rates and Statistical Phasing Errors}
 
 % Author name
-\author{Your M. Name}
+\author{Andrew T. Beck}
 
 % Specify the author's legal name, if different from the preferred name.
 %\legalname{Your Legal Name}
 
 % Department
-\department{Field of Degree (e.g. ``Psychology'')}
+\department{Biostatistics}
 
 % Year of completion
-\year=2020
+\year=2025
 
 % Author email
-\email{youremail@umich.edu}
+\email{beckandy@umich.edu}
 
 % Author ORCID iD
-\orcid{0000-0000-0000-0000}
+\orcid{0000-0002-2516-2423}
 
 % Frontispiece
 \frontispiece{\includegraphics[width=4in]{front_materials/frontispiece.png}}
@@ -66,31 +66,32 @@
 
 % Dedication (the input [7] determines the style -- 7 is Rackham's preferred style)
 % \hidededication{%
-\dedication[7]{\input{front_materials/dedication}}
+% \dedication[7]{\input{front_materials/dedication}}
 
 % Acknowledgments (the input [7] determines the style -- 7 is Rackham's preferred style)
-\acknowledgments[7]{\input{front_materials/acknowledgments}}
+% \acknowledgments[7]{\input{front_materials/acknowledgments}}
 
 % Preface
-\preface[7]{\input{front_materials/preface}}
+% \preface[7]{\input{front_materials/preface}}
 
 % Committee
 \committee{ %
-Professor First Name, Chair \\
-Professor Second Name in Alphabetical Order \\
-Professor Third Name in Alphabetical Order \\
-Professor Fourth Name in Alphabetical Order
+Professor Sebastian Z\"{o}llner, Chair \\
+Professor Veera Baladandayuthapani, Member \\
+Professor Hui Jiang, Member \\
+Professor Xiang Zhou, Member \\
+Professor Jun Li, Cognate
 }
 
 % Chair must be entered separately for formatting reasons.
-\chair{Professor First Name}
+\chair{Professor Sebastian}
 %\cochair{Co-chair One \& Co-chair Two}
 
 
 % Definition of any acronyms used.
 % To add an acronym, add an \acro{}{} command on a new line within the \acronyms{} command. For \acro, field 1 is the acronym and field 2 is the corresponding expression. For example: \acro{TLA}{Three Letter Acronym}.
 \acronyms{
-    \acro{TLA}{Three Letter Acronym}
+    \acro{NGS}{Next Generation Sequencing}
     \acro{SOA}{Some Other Acronym}
 }
 
@@ -103,17 +104,17 @@ Professor Fourth Name in Alphabetical Order
 
 % Commands to hide or show lists of figures, tables, etc.
 % To hide a list, change the word "show" in the command to "hide".
-\showlistoftables
-\showlistofprograms
-\showlistofappendices
-\showlistofacronyms
+\hidelistoftables
+\hidelistofprograms
+\hidelistofappendices
+\hidelistofacronyms
 \hidelistofsymbols
 
 
 % Some abstract text
-\abstract{
-\input{front_materials/abstract}
-}
+%\abstract{
+%\input{front_materials/abstract}
+%}
 %\hideabstractpagenumber
 
 %% DOCUMENT AREA
@@ -121,7 +122,8 @@ Professor Fourth Name in Alphabetical Order
 
 \input{chapters/example_chapter_01}
 % Place your additional chapters here using the \input{} command
-\input{chapters/example_chapter_99}
+\input{chapters/chapter_02}
+\input{chapters/chapter_03}
 
 % Appendices
 \appendix
