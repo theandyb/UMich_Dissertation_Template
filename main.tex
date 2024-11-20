@@ -59,7 +59,7 @@
 \orcid{0000-0002-2516-2423}
 
 % Frontispiece
-\frontispiece{\includegraphics[width=4in]{front_materials/frontispiece.png}}
+% \frontispiece{\includegraphics[width=4in]{front_materials/frontispiece.png}}
 
 % Default style for front pages
 \frontpagestyle{7} % 7 is preferred by Rackham, but should be set individually for each front page
@@ -109,7 +109,7 @@ Professor Jun Li, Cognate
 \hidelistofappendices
 \hidelistofacronyms
 \hidelistofsymbols
-
+\hidelistoffigures
 
 % Some abstract text
 %\abstract{
@@ -124,13 +124,14 @@ Professor Jun Li, Cognate
 % Place your additional chapters here using the \input{} command
 \input{chapters/chapter_02}
 \input{chapters/chapter_03}
+\input{chapters/chapter_04}
 
 % Appendices
-\appendix
-\input{appendices/example_appendix_01}
-\input{appendices/example_appendix_02}
+%\appendix
+%\input{appendices/example_appendix_01}
+%\input{appendices/example_appendix_02}
 
-\bibliographystyle{plain}
+\bibliographystyle{plain2.bst}
 
 % Give this command the relative path to the .bib file.
 \bibliography{references.bib}
